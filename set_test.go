@@ -104,7 +104,7 @@ func TestSettReset(t *testing.T) {
 	}
 
 	if c, ok := s.MultiCounters("multi"); c == nil || !ok || c["foo"] != 0 {
-		t.Errorf("Invalid counter value, got %d, want %d", c, map[string]int32{"foo": 0})
+		t.Errorf("Invalid counter value, got %v, want %v", c, map[string]int32{"foo": 0})
 	}
 }
 
